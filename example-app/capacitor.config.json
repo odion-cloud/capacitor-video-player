@@ -1,5 +1,5 @@
 {
-  "appId": "app.capgo.video.player",
+  "appId": "app.odion.video.player",
   "appName": "Video Player Example",
   "webDir": "dist",
   "plugins": {

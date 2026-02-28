@@ -1,4 +1,4 @@
-package com.capgo.videoplayer.Utilities;
+package com.odion.videoplayer.Utilities;
 
 import android.content.Context;
 import java.io.File;

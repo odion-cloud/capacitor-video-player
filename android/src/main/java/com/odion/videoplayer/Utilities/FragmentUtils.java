@@ -1,4 +1,4 @@
-package com.capgo.videoplayer.Utilities;
+package com.odion.videoplayer.Utilities;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

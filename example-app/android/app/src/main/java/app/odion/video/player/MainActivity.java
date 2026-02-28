@@ -1,4 +1,4 @@
-package app.capgo.video.player;
+package app.odion.video.player;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -1,4 +1,4 @@
-package com.capgo.videoplayer.Notifications;
+package com.odion.videoplayer.Notifications;
 
 import java.util.ArrayList;
 import java.util.HashMap;

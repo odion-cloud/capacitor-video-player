@@ -1,4 +1,4 @@
-package com.capgo.videoplayer;
+package com.odion.videoplayer;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -44,7 +44,7 @@ import androidx.mediarouter.app.MediaRouteButton;
 import androidx.mediarouter.media.MediaControlIntent;
 import androidx.mediarouter.media.MediaRouteSelector;
 import androidx.mediarouter.media.MediaRouter;
-import com.capgo.videoplayer.Notifications.NotificationCenter;
+import com.odion.videoplayer.Notifications.NotificationCenter;
 import com.getcapacitor.JSObject;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.DefaultLoadControl;

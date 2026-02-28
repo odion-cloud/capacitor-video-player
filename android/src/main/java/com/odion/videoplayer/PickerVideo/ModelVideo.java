@@ -1,4 +1,4 @@
-package com.capgo.videoplayer.PickerVideo;
+package com.odion.videoplayer.PickerVideo;
 
 import android.net.Uri;
 

@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "8.0.0"),
-        .package(name: "CapgoCapacitorVideoPlayer", path: "../../../node_modules/.bun/@capgo+capacitor-video-player@file+../node_modules/@capgo/capacitor-video-player")
+        .package(name: "OdionCapacitorVideoPlayer", path: "../../../node_modules/.bun/@odion+capacitor-video-player@file+../node_modules/@odion-cloud/capacitor-video-player")
     ],
     targets: [
         .target(
@@ -20,7 +20,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm"),
-                .product(name: "CapgoCapacitorVideoPlayer", package: "CapgoCapacitorVideoPlayer")
+                .product(name: "OdionCapacitorVideoPlayer", package: "OdionCapacitorVideoPlayer")
             ]
         )
     ]

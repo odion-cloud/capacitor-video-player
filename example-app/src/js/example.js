@@ -1,4 +1,4 @@
-import { VideoPlayer } from '@capgo/capacitor-video-player';
+import { VideoPlayer } from '@odion-cloud/capacitor-video-player';
 
 const PLAYER_ID = 'embedded-player';
 const COMPONENT_SELECTOR = 'main';

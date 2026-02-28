@@ -1,4 +1,4 @@
-package com.capgo.videoplayer;
+package com.odion.videoplayer;
 
 import android.Manifest;
 import android.app.Activity;
@@ -12,11 +12,11 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
-import com.capgo.videoplayer.Notifications.MyRunnable;
-import com.capgo.videoplayer.Notifications.NotificationCenter;
-import com.capgo.videoplayer.PickerVideo.PickerVideoFragment;
-import com.capgo.videoplayer.Utilities.FilesUtils;
-import com.capgo.videoplayer.Utilities.FragmentUtils;
+import com.odion.videoplayer.Notifications.MyRunnable;
+import com.odion.videoplayer.Notifications.NotificationCenter;
+import com.odion.videoplayer.PickerVideo.PickerVideoFragment;
+import com.odion.videoplayer.Utilities.FilesUtils;
+import com.odion.videoplayer.Utilities.FragmentUtils;
 import com.getcapacitor.Bridge;
 import com.getcapacitor.JSObject;
 import com.getcapacitor.PermissionState;
@@ -74,7 +74,7 @@ public class VideoPlayerPlugin extends Plugin {
     private String title;
     private String smallTitle;
     private String accentColor;
-    private Boolean chromecast = true;
+    private Boolean chromecast = false;
     private String artwork;
     private String url;
     private String playerId;
@@ -169,7 +169,7 @@ public class VideoPlayerPlugin extends Plugin {
             _displayMode = call.getString("displayMode");
         }
         displayMode = _displayMode;
-        if ("fullscreen".equals(mode)) {
+        if ("fullscreen".equals(mode) || "embedded".equals(mode)) {
             fsPlayerId = playerId;
             url = call.getString("url");
             if (url == null) {
@@ -243,10 +243,6 @@ public class VideoPlayerPlugin extends Plugin {
             } else {
                 _initPlayer(call);
             }
-        } else if ("embedded".equals(mode)) {
-            ret.put("message", "Embedded Mode not implemented");
-            call.resolve(ret);
-            return;
         }
     }
 
@@ -1173,10 +1169,16 @@ public class VideoPlayerPlugin extends Plugin {
                             // Initialize a new FrameLayout as container for fragment
                             frameLayoutView = new FrameLayout(getActivity().getApplicationContext());
                             frameLayoutView.setId(frameLayoutViewId);
-                            FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(
-                                FrameLayout.LayoutParams.MATCH_PARENT,
-                                FrameLayout.LayoutParams.MATCH_PARENT
-                            );
+                            int layoutWidth = FrameLayout.LayoutParams.MATCH_PARENT;
+                            int layoutHeight = FrameLayout.LayoutParams.MATCH_PARENT;
+
+                            if ("embedded".equals(mode)) {
+                                // If javascript passes width/height, use it. Otherwise, use 1 pixel.
+                                layoutWidth = call.getInt("width", 1);
+                                layoutHeight = call.getInt("height", 1);
+                            }
+
+                            FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(layoutWidth, layoutHeight);
                             // Apply the Layout Parameters to frameLayout
                             frameLayoutView.setLayoutParams(lp);
 

@@ -1,4 +1,4 @@
-package com.capgo.videoplayer.PickerVideo;
+package com.odion.videoplayer.PickerVideo;
 
 //import android.app.Fragment;
 import android.content.ContentUris;
@@ -15,8 +15,8 @@ import android.view.ViewGroup;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.capgo.videoplayer.Notifications.NotificationCenter;
-import com.capgo.videoplayer.R;
+import com.odion.videoplayer.Notifications.NotificationCenter;
+import com.odion.videoplayer.R;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Locale;

@@ -1,4 +1,4 @@
-package com.capgo.videoplayer.PickerVideo;
+package com.odion.videoplayer.PickerVideo;
 
 import android.util.Log;
 import android.view.View;
@@ -6,8 +6,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.capgo.videoplayer.Notifications.NotificationCenter;
-import com.capgo.videoplayer.R;
+import com.odion.videoplayer.Notifications.NotificationCenter;
+import com.odion.videoplayer.R;
 import com.squareup.picasso.Picasso;
 import java.util.HashMap;
 import java.util.Map;

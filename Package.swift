@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "CapgoCapacitorVideoPlayer",
+    name: "OdionCapacitorVideoPlayer",
     platforms: [.iOS(.v15)],
     products: [
         .library(
-            name: "CapgoCapacitorVideoPlayer",
+            name: "OdionCapacitorVideoPlayer",
             targets: ["VideoPlayerPlugin"])
     ],
     dependencies: [

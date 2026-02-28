@@ -59,14 +59,6 @@ public class VideoPlayerPlugin: CAPPlugin, CAPBridgedPlugin {
         }
 
         let mode = call.getString("mode") ?? "fullscreen"
-        guard mode == "fullscreen" else {
-            call.resolve([
-                "result": false,
-                "method": "initPlayer",
-                "message": "Only fullscreen mode is supported on iOS"
-            ])
-            return
-        }
 
         let rate = call.getFloat("rate") ?? 1.0
         let exitOnEnd = call.getBool("exitOnEnd") ?? true

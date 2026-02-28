@@ -1,7 +1,7 @@
-package com.capgo.videoplayer;
+package com.odion.videoplayer;
 
 import android.content.Context;
-import com.capgo.videoplayer.PickerVideo.PickerVideoFragment;
+import com.odion.videoplayer.PickerVideo.PickerVideoFragment;
 import com.getcapacitor.JSObject;
 
 public class VideoPlayer {

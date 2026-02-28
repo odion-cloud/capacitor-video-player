@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace = "app.capgo.video.player"
+    namespace = "app.odion.video.player"
     compileSdk = rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId = "app.capgo.video.player"
+        applicationId = "app.odion.video.player"
         minSdkVersion = rootProject.ext.minSdkVersion
         targetSdkVersion = rootProject.ext.targetSdkVersion
         versionCode = 1

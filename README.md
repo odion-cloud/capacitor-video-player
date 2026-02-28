@@ -1,15 +1,10 @@
-# @capgo/capacitor-video-player
- <a href="https://capgo.app/"><img src='https://raw.githubusercontent.com/Cap-go/capgo/main/assets/capgo_banner.png' alt='Capgo - Instant updates for capacitor'/></a>
+# @odion-cloud/capacitor-video-player
 
-<div align="center">
-  <h2><a href="https://capgo.app/?ref=plugin_video_player"> ➡️ Get Instant updates for your App with Capgo</a></h2>
-  <h2><a href="https://capgo.app/consulting/?ref=plugin_video_player"> Missing a feature? We’ll build the plugin for you 💪</a></h2>
-</div>
 Native video playback for Capacitor apps
 
 ## Documentation
 
-The most complete doc is available here: https://capgo.app/docs/plugins/video-player/
+The most complete doc is available here: https://github.com/odion-cloud/capacitor-video-player
 
 ## Compatibility
 
@@ -25,7 +20,7 @@ The most complete doc is available here: https://capgo.app/docs/plugins/video-pl
 ## Install
 
 ```bash
-npm install @capgo/capacitor-video-player
+npm install @odion-cloud/capacitor-video-player
 npx cap sync
 ```
 
